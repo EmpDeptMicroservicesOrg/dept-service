@@ -25,7 +25,7 @@ pipeline {
                 bat "docker rm -f dept-service-container"
                 bat "docker rmi -f dept-service-image"
                 bat "docker build -t dept-service-image ."
-                bat "docker run -p 8088:8088 -d --name dept-service-container dept-service-image"
+                bat "docker run -p 8081:8081 -d --name dept-service-container dept-service-image"
             }
         }
     }
